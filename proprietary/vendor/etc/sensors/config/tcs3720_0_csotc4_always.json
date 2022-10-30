@@ -1,0 +1,46 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["457", "482", "552", "530", "531", "540"],
+    "panel": ["csot_nt37701A_667_curve_1080x2400_dsc_cmd_c4"]
+  },
+  "tcs3720_platform":{
+    "owner": "sns_tcs3720",
+    ".prox":{
+      "owner": "sns_tcs3720",
+      ".def_config":{
+        "owner": "sns_tcs3720",
+        "p_pulse_len":{ "type": "flt", "ver": "10101010",
+          "data": "56.0"
+        },
+        "p_Isink0":{ "type": "flt", "ver": "10101010",
+          "data": "10.0"
+        },
+        "p_Isink1":{ "type": "flt", "ver": "10101010",
+          "data": "10.0"
+        }
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3720",
+      ".scale_cal":{
+        "owner": "sns_tcs3720",
+        "white_ch_data_default":{ "type": "str", "ver": "10101010",
+          "data": "342.7015,190.4417,132.2848,46.56044"
+        },
+        "tf_param_id":{ "type": "int", "ver": "10101010",
+          "data": "0"
+        }
+      },
+      ".lux_coefs":{
+        "owner": "sns_tcs3720",
+        "4ch_coefs_0":{ "type": "str", "ver": "10101010",
+          "data": "0,1.102585,0.932,-0.752,1.614,-1.985"
+        },
+        "4ch_coefs_1":{ "type": "str", "ver": "10101010",
+          "data": "0,1.102585,0.932,-0.752,1.614,-1.985"
+        }
+      }
+    }
+  }
+}

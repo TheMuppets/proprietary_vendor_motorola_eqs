@@ -1,0 +1,40 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["457", "482", "552", "530", "531", "540"]
+  },
+  "mot_drop":{
+    "owner": "mot_drop",
+    ".params":{
+      "owner": "mot_drop",
+      "first_accel":{ "type": "flt", "ver": "0",
+        "data": "40"
+      },
+      "acc_count":{ "type": "int", "ver": "0",
+        "data": "20"
+      },
+      "suspect_variance":{ "type": "flt", "ver": "0",
+        "data": "10.0"
+      },
+      "detect_variance":{ "type": "flt", "ver": "0",
+        "data": "0.2"
+      },
+      "detect_accel":{ "type": "flt", "ver": "0",
+        "data": "1.8"
+      },
+      "impact_accel":{ "type": "flt", "ver": "0",
+        "data": "3000"
+      },
+      "impact_variance":{ "type": "flt", "ver": "0",
+        "data": "10000"
+      },
+      "wait_time":{ "type": "int", "ver": "0",
+        "data": "500"
+      },
+      "alpha":{ "type": "flt", "ver": "0",
+        "data": "0.37"
+      }
+    }
+  }
+}

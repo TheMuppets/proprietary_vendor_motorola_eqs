@@ -1,0 +1,16 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["457", "482", "552", "530", "531", "540"]
+  },
+  "mot_vsync_psd":{
+    "owner": "mot_vsync_psd",
+    ".params":{
+      "owner": "mot_vsync_psd",
+      "panel_nums":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}

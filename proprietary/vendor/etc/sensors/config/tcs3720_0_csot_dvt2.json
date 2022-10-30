@@ -1,0 +1,26 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["457", "482", "552", "530", "531", "540"],
+    "panel": ["csot_nt37701A_667_curve_1080x2400_dsc_cmd_v2"],
+    "ro.vendor.hw.revision": ["dvt2a", "dvt2a1", "dvt2b1", "dvt2b2", "dvt2b3"]
+  },
+  "tcs3720_platform":{
+    "owner": "sns_tcs3720",
+    ".prox":{
+      "owner": "sns_tcs3720",
+      ".def_config":{
+        "owner": "sns_tcs3720",
+        "p_pulse_len":{ "type": "flt", "ver": "101010112",
+          "data": "56.0"
+        },
+        "p_Isink0":{ "type": "flt", "ver": "10101012",
+          "data": "10.0"
+        },
+        "p_Isink1":{ "type": "flt", "ver": "10101012",
+          "data": "10.0"
+        }
+      }
+    }
+  }
+}
