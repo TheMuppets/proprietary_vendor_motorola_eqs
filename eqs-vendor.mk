@@ -26,7 +26,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
     vendor/motorola/eqs/proprietary/system_ext/lib/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmcf_native_window_helper.motocamera.so \
     vendor/motorola/eqs/proprietary/system_ext/lib64/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmcf_native_window_helper.motocamera.so \
+    vendor/motorola/eqs/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
+    vendor/motorola/eqs/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service.st \
+    vendor/motorola/eqs/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-gto:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-gto \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.desktop@2.0-service \
     vendor/motorola/eqs/proprietary/vendor/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb \
     vendor/motorola/eqs/proprietary/vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_workspaceFile.qwsp \
@@ -46,6 +49,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/motorola/eqs/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
+    vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.st.rc \
+    vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-gto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-gto.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st54j.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st54j.conf \
@@ -366,6 +371,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@2.0.so \
     vendor/motorola/eqs/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.0-service-impl.so \
     vendor/motorola/eqs/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl-gto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl-gto.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_u.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so \
@@ -602,6 +608,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libremosaiclib_s5kjn1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib_s5kjn1.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/librmsclib1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmsclib1.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfeShiftExtrapolation.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libstnfc-auth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstnfc-auth.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
@@ -620,6 +627,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_zoom_stabilization.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@2.0.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
