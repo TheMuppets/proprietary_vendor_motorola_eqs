@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
     vendor/motorola/eqs/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
     vendor/motorola/eqs/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings \
+    vendor/motorola/eqs/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/eqs/proprietary/system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
     vendor/motorola/eqs/proprietary/vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
     vendor/motorola/eqs/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
@@ -38,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/camera/dual_golden_tele.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_tele.bin \
     vendor/motorola/eqs/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
     vendor/motorola/eqs/proprietary/vendor/etc/camera/mot_engine_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_engine_config.bin \
+    vendor/motorola/eqs/proprietary/vendor/etc/camera/vidhance.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance.lic \
     vendor/motorola/eqs/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.json \
     vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667_c6.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667_c6.json \
@@ -52,6 +54,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.st.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-gto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-gto.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
+    vendor/motorola/eqs/proprietary/vendor/etc/jiigan/jiigan_model.data:$(TARGET_COPY_OUT_VENDOR)/etc/jiigan/jiigan_model.data \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st54j.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st54j.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-nci-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-st.conf \
@@ -126,6 +129,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/st21nfc_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf_ss.txt \
     vendor/motorola/eqs/proprietary/vendor/etc/st54j_conf_ds.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_conf_ds.txt \
     vendor/motorola/eqs/proprietary/vendor/etc/st54j_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_conf_ss.txt \
+    vendor/motorola/eqs/proprietary/vendor/etc/tetras/portrait_repair_composite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite.model \
     vendor/motorola/eqs/proprietary/vendor/etc/thermal-engine-eqs.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-eqs.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
@@ -144,6 +148,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_cfg_group.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_test_limits_255.csv \
+    vendor/motorola/eqs/proprietary/vendor/lib/audio_algo.sst_component.so:$(TARGET_COPY_OUT_VENDOR)/lib/audio_algo.sst_component.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so \
@@ -345,6 +350,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib/libopencv3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopencv3a.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopestriping.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libos.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/libportrait_repair_ppl3_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libportrait_repair_ppl3_ocl.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowercore.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libqll.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqll.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqll10.so \
@@ -360,18 +366,25 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideooptfeature.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/motorola/eqs/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_active_ois.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_active_ois.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_dmbr.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_face_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_face_stabilizer.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_fbc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_fbc.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_horizon_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_horizon_correction.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_stabilizer.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_zoom_stabilization.so \
     vendor/motorola/eqs/proprietary/vendor/lib/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/eqs/proprietary/vendor/lib/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@2.0.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSnpeHtpV68Skel.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSnpeHtpV69Skel.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppFrcQnnHtp.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libVppQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppQnnHtp.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libcalculator_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcalculator_skel.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_ais_networks.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libvpp_vqa_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_vqa_networks.so \
+    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpt_action_recognition.so \
     vendor/motorola/eqs/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.0-service-impl.so \
     vendor/motorola/eqs/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl-gto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl-gto.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/audio_algo.sst_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audio_algo.sst_component.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_u.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so \
@@ -529,13 +542,20 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/frontier_arcsoft_super_night_se_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/frontier_arcsoft_super_night_se_raw.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libAncHumanSegFigureFusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAncHumanSegFigureFusion.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3DTA.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3D_hlos.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPlatformValidatorShared.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQ6MSFR_manager_stub.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libSnpeHtpPrepare.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpPrepare.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libSnpeHtpV68Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV68Stub.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libSnpeHtpV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV69Stub.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/liba2d_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2d_helper.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiserv2.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libancbase_rt_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase_rt_fusion.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libarcsoft_chi_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_chi_utils.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
@@ -550,6 +570,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libarcsoft_triple_zoomtranslator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_triple_zoomtranslator.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libcalculator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalculator.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libcalculator_htp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalculator_htp.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libcamxcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxcommonutils.so \
@@ -574,8 +597,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libeye_tracking_dsp_sample_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeye_tracking_dsp_sample_stub.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface3d_dev.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcell.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libflatbuffers-cpp_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflatbuffers-cpp_vendor.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plus.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libhme.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhme.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping170.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libipebpsstriping480.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping480.so \
@@ -598,6 +623,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libopencv3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv3a.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libportrait_repair_ppl3_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libportrait_repair_ppl3_ocl.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libqll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
@@ -607,24 +633,22 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libremosaiclib_s5khp1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib_s5khp1.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libremosaiclib_s5kjn1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib_s5kjn1.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/librmsclib1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmsclib1.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libruy_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libruy_vendor.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfeShiftExtrapolation.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libsnpe_loader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_loader.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libstnfc-auth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstnfc-auth.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libtextclassifier_hash_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtextclassifier_hash_vendor.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/libtflite_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_vendor.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_active_ois.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_active_ois.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_dmbr.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_face_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_face_stabilizer.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_fbc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_fbc.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_horizon_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_horizon_correction.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_stabilizer.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_zoom_stabilization.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@2.0.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
@@ -638,9 +662,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MotoSignatureApp \
     MotCamera3AI \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
     MotCamera4 \
     MotorolaSettingsProvider \
     com.motorola.motosignature \
     moto-core_services \
     moto-settings \
+    com.android.hotwordenrollment.common.util \
     com.motorola.androidx.camera.extensions
