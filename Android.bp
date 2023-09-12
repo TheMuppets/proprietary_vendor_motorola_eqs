@@ -100,10 +100,3 @@ dex_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "com.motorola.androidx.camera.extensions",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/com.motorola.androidx.camera.extensions.jar"],
-	system_ext_specific: true,
-}
-

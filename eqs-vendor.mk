@@ -22,11 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
     vendor/motorola/eqs/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings \
     vendor/motorola/eqs/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/motorola/eqs/proprietary/system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
-    vendor/motorola/eqs/proprietary/vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
-    vendor/motorola/eqs/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
-    vendor/motorola/eqs/proprietary/system_ext/lib/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmcf_native_window_helper.motocamera.so \
-    vendor/motorola/eqs/proprietary/system_ext/lib64/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmcf_native_window_helper.motocamera.so \
     vendor/motorola/eqs/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service.st \
@@ -139,8 +134,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/firmware/cps4035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4035.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/csot_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_goodix_cfg_group.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/csot_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_goodix_test_limits_255.csv \
-    vendor/motorola/eqs/proprietary/vendor/firmware/goodix-csot-gt9916-2207161f-62de58cd-eqs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-csot-gt9916-2207161f-62de58cd-eqs.bin \
-    vendor/motorola/eqs/proprietary/vendor/firmware/goodix-tianma-gt9916-2207161f-62de5b51-eqs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916-2207161f-62de5b51-eqs.bin \
+    vendor/motorola/eqs/proprietary/vendor/firmware/goodix-csot-gt9916-23021720-646772e8-eqs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-csot-gt9916-23021720-646772e8-eqs.bin \
+    vendor/motorola/eqs/proprietary/vendor/firmware/goodix-tianma-gt9916-23021720-646772e8-eqs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916-23021720-646772e8-eqs.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/mot_bu63169.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_bu63169.coeff \
     vendor/motorola/eqs/proprietary/vendor/firmware/mot_bu63169.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_bu63169.prog \
     vendor/motorola/eqs/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
@@ -148,7 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_cfg_group.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_test_limits_255.csv \
-    vendor/motorola/eqs/proprietary/vendor/lib/audio_algo.sst_component.so:$(TARGET_COPY_OUT_VENDOR)/lib/audio_algo.sst_component.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so \
@@ -384,7 +378,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.0-service-impl.so \
     vendor/motorola/eqs/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl-gto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl-gto.so \
-    vendor/motorola/eqs/proprietary/vendor/lib64/audio_algo.sst_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audio_algo.sst_component.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_u.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so \
@@ -669,5 +662,4 @@ PRODUCT_PACKAGES += \
     com.motorola.motosignature \
     moto-core_services \
     moto-settings \
-    com.android.hotwordenrollment.common.util \
-    com.motorola.androidx.camera.extensions
+    com.android.hotwordenrollment.common.util

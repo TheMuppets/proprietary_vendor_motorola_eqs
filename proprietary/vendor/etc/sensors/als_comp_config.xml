@@ -94,6 +94,10 @@
 			<value>44.959175</value>
 		</configuration>
 		<configuration>
+			<name>DCmode_valid</name>
+			<value>0</value>
+		</configuration>
+		<configuration>
 			<name>tfModePath</name>
 			<value>/vendor/etc/sensors/als_comp_tf_csotc4.config</value>
 		</configuration>
