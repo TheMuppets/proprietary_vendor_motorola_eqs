@@ -12,10 +12,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/product/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.xml \
     vendor/motorola/eqs/proprietary/vendor/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.xml \
     vendor/motorola/eqs/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
-    vendor/motorola/eqs/proprietary/product/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.motodisplay.xml \
     vendor/motorola/eqs/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
     vendor/motorola/eqs/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera3.xml \
-    vendor/motorola/eqs/proprietary/product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml \
     vendor/motorola/eqs/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml \
     vendor/motorola/eqs/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
     vendor/motorola/eqs/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
@@ -25,6 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.desktop@2.0-service \
+    vendor/motorola/eqs/proprietary/vendor/bin/hw/motorola.hardware.sensorext-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.sensorext-service \
     vendor/motorola/eqs/proprietary/vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider@2.7-service_64 \
     vendor/motorola/eqs/proprietary/vendor/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb \
     vendor/motorola/eqs/proprietary/vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_workspaceFile.qwsp \
@@ -48,10 +47,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.st-moto.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-gto-moto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-gto-moto.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
+    vendor/motorola/eqs/proprietary/vendor/etc/init/motorola.hardware.sensorext.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.sensorext.service.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/jiigan/jiigan_model.data:$(TARGET_COPY_OUT_VENDOR)/etc/jiigan/jiigan_model.data \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st54j.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st54j.conf \
+    vendor/motorola/eqs/proprietary/vendor/etc/libnfc-hal-st54uicc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st54uicc.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/libnfc-nci-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-st.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/sensors/als_comp_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_config.xml \
@@ -122,6 +123,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/st21nfc_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf_ss.txt \
     vendor/motorola/eqs/proprietary/vendor/etc/st54j_conf_ds.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_conf_ds.txt \
     vendor/motorola/eqs/proprietary/vendor/etc/st54j_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_conf_ss.txt \
+    vendor/motorola/eqs/proprietary/vendor/etc/st54uicc_conf_ds.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54uicc_conf_ds.txt \
+    vendor/motorola/eqs/proprietary/vendor/etc/st54uicc_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54uicc_conf_ss.txt \
     vendor/motorola/eqs/proprietary/vendor/etc/tetras/portrait_repair_composite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite.model \
     vendor/motorola/eqs/proprietary/vendor/etc/thermal-engine-eqs.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-eqs.conf \
     vendor/motorola/eqs/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -141,6 +144,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_cfg_group.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_test_limits_255.csv \
+    vendor/motorola/eqs/proprietary/vendor/firmware/venus_4mb.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb.mbn \
+    vendor/motorola/eqs/proprietary/vendor/firmware/venus_4mb_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_unsigned.mbn \
+    vendor/motorola/eqs/proprietary/vendor/firmware/venus_4mb_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_v6.mbn \
+    vendor/motorola/eqs/proprietary/vendor/firmware/venus_4mb_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_v7.mbn \
+    vendor/motorola/eqs/proprietary/vendor/firmware/venus_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6.mbn \
+    vendor/motorola/eqs/proprietary/vendor/firmware/venus_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v7.mbn \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_imx663_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom.so \
     vendor/motorola/eqs/proprietary/vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so \
@@ -362,7 +371,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libcalculator_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcalculator_skel.so \
     vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc.so \
     vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so \
-    vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
     vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
     vendor/motorola/eqs/proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_ais_networks.so \
@@ -631,7 +639,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@2.0.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/motorola.hardware.sensors-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.sensors-V1-ndk_platform.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/panel_als_comp_filter_eqs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/panel_als_comp_filter_eqs.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/panel_als_comp_filter_eqs_csotc6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/panel_als_comp_filter_eqs_csotc6.so \
+    vendor/motorola/eqs/proprietary/vendor/lib64/panel_als_comp_filter_eqs_tianma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/panel_als_comp_filter_eqs_tianma.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/motorola/eqs/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
@@ -643,13 +655,14 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0-impl-gto \
     MotoSignatureApp \
     MotCamera3AI \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     MotCamera4 \
     MotorolaSettingsProvider \
     com.motorola.motosignature \
     moto-core_services \
     moto-settings \
     com.android.hotwordenrollment.common.util \
+    motorola.hardware.sensorext.service \
     android.hardware.nfc@1.2-service.st \
     android.hardware.secure_element@1.2-service-gto

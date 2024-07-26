@@ -757,7 +757,7 @@
 		</mappings>
 	</device>
 
-	<device name="lynkco" version="1.0">
+	<device name="lynkco" version="1.8">
 
 		<!-- Features list variable hardware components for this device -->
 		<features>
@@ -776,6 +776,8 @@
 				<item>fps</item>
 				<!-- Near Field Communication function -->
 				<item>nfc</item>
+				<!-- Japan felica hardware support -->
+				<item>felica</item>
 				<!-- barometer -->
 				<item>barometer</item>
 				<!-- eCompass -->
@@ -784,8 +786,6 @@
 				<item>uwb</item>
 				<!-- btvnm -->
 				<item>btnvm</item>
-				<!-- Display port -->
-				<item>displayport</item>
 				<!-- esim -->
 				<item>esim</item>
 				<!-- esim id -->
@@ -816,13 +816,14 @@
 			<!-- look up value by matching "hwid" table, combination with current device,
 				then parsing out field indicated by "index",
 				and then translating the field as prescribed by "map" -->
-			<string name="radio/.auto">key=hwid;index=2;map=1:PRC,2:ROW,3:NA</string>
+			<string name="radio/.auto">key=hwid;index=2;map=1:PRC,2:ROW,3:NA,4:JPN</string>
 			<string name="radio/.cmdline">androidboot.</string>
 			<string name="radio/.system">ro.vendor.hw.</string>
 			<string-array name="radio/.range">
 				<item>PRC</item>
 				<item>ROW</item>
 				<item>NA</item>
+				<item>JPN</item>
 			</string-array>
 
 			<!-- use result of ram HW detection to fill the field -->
@@ -848,7 +849,7 @@
 				<item>false</item>
 			</string-array>
 
-			<string name="esim/.auto">default=true</string>
+			<string name="esim/.auto">default=false</string>
 			<string name="esim/.system">ro.vendor.hw.</string>
 			<string-array name="esim/.range">
 				<item>true</item>
@@ -858,9 +859,10 @@
 			<!-- frontcolor has to be programmed explicitly -->
 			<string name="frontcolor/.system">ro.vendor.hw.</string>
 			<string-array name="frontcolor/.range">
-				<item>barberry</item>
-				<item>black</item>
-				<item>blue</item>
+				<item>sedonasage</item>
+				<item>tofu</item>
+				<item>grapecompote</item>
+				<item>mauvechalk</item>
 				<item>other</item>
 			</string-array>
 
@@ -879,19 +881,27 @@
 				<item>true</item>
 			</string-array>
 
-			<string name="barometer/.auto">key=hwid;index=2;map=1:true,2:true,3:true,4:true</string>
+			<string name="barometer/.auto">key=hwid;index=2;map=1:false,2:false,3:true,4:false</string>
 			<string name="barometer/.system">ro.vendor.hw.</string>
 			<string-array name="barometer/.range">
 				<item>true</item>
 				<item>false</item>
 			</string-array>
 
-			<string name="nfc/.auto">key=hwid;index=2;map=1:nq,2:nq,3:nq,4:ese_nq</string>
+			<string name="nfc/.auto">key=hwid;index=2;map=1:ese_nq,2:nq,3:nq,4:ese_nq</string>
 			<string name="nfc/.chosen">mmi,</string>
 			<string name="nfc/.system">ro.vendor.hw.</string>
 			<string-array name="nfc/.range">
 				<item>ese_nq</item>
 				<item>nq</item>
+			</string-array>
+
+			<string name="felica/.auto">key=hwid;index=2;map=1:false,2:false,3:false,4:true</string>
+			<string name="felica/.chosen">mmi,</string>
+			<string name="felica/.system">ro.vendor.hw.</string>
+			<string-array name="felica/.range">
+				<item>true</item>
+				<item>false</item>
 			</string-array>
 
 			<string name="uwb/.auto">default=false</string>
@@ -907,14 +917,6 @@
 			<string-array name="btnvm/.range">
 				<item>epa</item>
 				<item>ipa</item>
-			</string-array>
-
-			<string name="displayport/.auto">default=true</string>
-			<string name="displayport/.system">ro.vendor.hw.</string>
-			<string name="displayport/.chosen">mmi,</string>
-			<string-array name="displayport/.range">
-				<item>true</item>
-				<item>false</item>
 			</string-array>
 
 			<string name="esimid/.auto">uspace=config;name=esimid</string>
@@ -937,24 +939,42 @@
                                 to be set in property indicated by "export" -->
 			<skus export="ro.vendor.product.hardware.sku.variant">
 				<!-- ... same format as variants/products ... -->
-				<variant name="n">
-					<string name="dualsim">false</string>
-					<string name="nfc">nq</string>
+				<variant name="dne">
+					<string name="dualsim">true</string>
+					<string name="nfc">ese_nq</string>
+					<string name="barometer">false</string>
 				</variant>
-				<variant name="dn">
-                                        <string name="dualsim">true</string>
-                                        <string name="nfc">nq</string>
-                                </variant>
 				<variant name="ne">
 					<string name="dualsim">false</string>
 					<string name="nfc">ese_nq</string>
+					<string name="barometer">false</string>
 				</variant>
+				<variant name="dn">
+					<string name="dualsim">true</string>
+					<string name="nfc">nq</string>
+					<string name="barometer">false</string>
+				</variant>
+				<variant name="dnp">
+					<string name="dualsim">true</string>
+					<string name="nfc">nq</string>
+					<string name="barometer">true</string>
+				</variant>
+				<variant name="n">
+					<string name="dualsim">false</string>
+					<string name="nfc">nq</string>
+					<string name="barometer">false</string>
+				</variant>
+				<variant name="np">
+					<string name="dualsim">false</string>
+					<string name="nfc">nq</string>
+					<string name="barometer">true</string>
+                                </variant>
 			</skus>
 
 		</mappings>
 	</device>
 
-	<device name="zeekr" version="1.4">
+	<device name="zeekr" version="2.0">
 
 		<!-- Features list variable hardware components for this device -->
 		<features>
@@ -981,10 +1001,10 @@
 				<item>uwb</item>
 				<!-- btvnm -->
 				<item>btnvm</item>
-				<!-- Display port -->
-				<item>displayport</item>
 				<!-- esim -->
 				<item>esim</item>
+				<!-- esim id -->
+				<item>esimid</item>
 			</string-array>
 		</features>
 
@@ -1044,7 +1064,7 @@
 				<item>false</item>
 			</string-array>
 
-			<string name="esim/.auto">default=true</string>
+			<string name="esim/.auto">default=false</string>
 			<string name="esim/.system">ro.vendor.hw.</string>
 			<string-array name="esim/.range">
 				<item>true</item>
@@ -1057,6 +1077,7 @@
 				<item>barberry</item>
 				<item>black</item>
 				<item>blue</item>
+				<item>stardust</item>
 				<item>other</item>
 			</string-array>
 
@@ -1075,7 +1096,7 @@
 				<item>true</item>
 			</string-array>
 
-			<string name="barometer/.auto">key=hwid;index=2;map=1:true,2:true,3:true,4:true</string>
+			<string name="barometer/.auto">key=hwid;index=2;map=1:true,2:false,3:false,4:false</string>
 			<string name="barometer/.system">ro.vendor.hw.</string>
 			<string-array name="barometer/.range">
 				<item>true</item>
@@ -1105,22 +1126,11 @@
 				<item>ipa</item>
 			</string-array>
 
-			<string name="displayport/.auto">default=true</string>
-			<string name="displayport/.system">ro.vendor.hw.</string>
-			<string name="displayport/.chosen">mmi,</string>
-			<string-array name="displayport/.range">
-				<item>true</item>
-				<item>false</item>
-			</string-array>
-
+			<string name="esimid/.auto">uspace=config;name=esimid</string>
+			<string name="esimid/.system">ro.vendor.</string>
 		</constraints>
 
 		<mappings>
-			<!-- Products describe mapping of feature combinations to marketing names,
-				to be set in property indicated by "export" -->
-			<products export="ro.vendor.product.display" default="motorola edge+">
-			</products>
-
 			<!-- Variants describe mapping of feature combinations to device fingerprints,
 				to be set in property indicated by "export" -->
 			<variants export="ro.vendor.hw.variant" append="ro.vendor.product.device,ro.vendor.product.name,ro.product.device,ro.product.name">
@@ -1134,14 +1144,32 @@
 				<variant name="n">
 					<string name="dualsim">false</string>
 					<string name="nfc">nq</string>
+                                        <string name="barometer">false</string>
+				</variant>
+				<variant name="np">
+					<string name="dualsim">false</string>
+					<string name="nfc">nq</string>
+                                        <string name="barometer">true</string>
 				</variant>
 				<variant name="dn">
                                         <string name="dualsim">true</string>
                                         <string name="nfc">nq</string>
+                                        <string name="barometer">false</string>
+                                </variant>
+				<variant name="dnp">
+                                        <string name="dualsim">true</string>
+                                        <string name="nfc">nq</string>
+                                        <string name="barometer">true</string>
                                 </variant>
 				<variant name="ne">
 					<string name="dualsim">false</string>
 					<string name="nfc">ese_nq</string>
+                                        <string name="barometer">false</string>
+				</variant>
+				<variant name="nep">
+					<string name="dualsim">false</string>
+					<string name="nfc">ese_nq</string>
+                                        <string name="barometer">true</string>
 				</variant>
 			</skus>
 
@@ -2737,7 +2765,7 @@
 		</mappings>
 	</device>
 
-	<device name="bronco" version="1.6">
+	<device name="bronco" version="1.7">
 
 		<!-- Features list variable hardware components for this device -->
 		<features>
@@ -2792,13 +2820,14 @@
 			<!-- look up value by matching "hwid" table, combination with current device,
 				then parsing out field indicated by "index",
 				and then translating the field as prescribed by "map" -->
-			<string name="radio/.auto">key=hwid;index=2;map=1:PRC,2:ROW,3:NA,5:NAE</string>
+			<string name="radio/.auto">key=hwid;index=2;map=1:PRC,2:ROW,3:NA,4:ROWE,5:NAE</string>
 			<string name="radio/.cmdline">androidboot.</string>
 			<string name="radio/.system">ro.vendor.hw.</string>
 			<string-array name="radio/.range">
 				<item>PRC</item>
 				<item>ROW</item>
 				<item>NA</item>
+				<item>ROWE</item>
 				<item>NAE</item>
 			</string-array>
 
@@ -2827,7 +2856,7 @@
 				<item>false</item>
 			</string-array>
 
-			<string name="esim/.auto">key=hwid;index=2;map=1:false,2:false,3:false,5:true</string>
+			<string name="esim/.auto">key=hwid;index=2;map=1:false,2:false,3:false,4:true,5:true</string>
 			<string name="esim/.system">ro.vendor.hw</string>
 			<string-array name="esim/.range">
 				<item>true</item>
@@ -2857,14 +2886,14 @@
 				<item>true</item>
 			</string-array>
 
-			<string name="barometer/.auto">key=hwid;index=2;map=1:false,2:false,3:true,5:true</string>
+			<string name="barometer/.auto">key=hwid;index=2;map=1:false,2:false,3:true,4:false,5:true</string>
 			<string name="barometer/.system">ro.vendor.hw.</string>
 			<string-array name="barometer/.range">
 				<item>true</item>
 				<item>false</item>
 			</string-array>
 
-			<string name="nfc/.auto">key=hwid;index=2;map=1:ese_nq,2:nq,3:nq,5:ese_nq</string>
+			<string name="nfc/.auto">key=hwid;index=2;map=1:ese_nq,2:nq,3:nq,4:nq,5:nq</string>
 			<string name="nfc/.chosen">mmi,</string>
 			<string name="nfc/.system">ro.vendor.hw.</string>
 			<string-array name="nfc/.range">
@@ -2872,7 +2901,7 @@
 				<item>nq</item>
 			</string-array>
 
-			<string name="btnvm/.auto">key=hwid;index=2;map=1:ipa,2:ipa,3:ipa,5:ipa</string>
+			<string name="btnvm/.auto">key=hwid;index=2;map=1:ipa,2:ipa,3:ipa,4:ipa,5:ipa</string>
 			<string name="btnvm/.system">ro.vendor.hw.</string>
 			<string-array name="btnvm/.range">
 				<item>ipa</item>
@@ -2907,18 +2936,42 @@
 				<variant name="sku-ss-nfc">
 					<string name="dualsim">false</string>
 					<string name="nfc">nq</string>
+                                        <string name="barometer">false</string>
 				</variant>
 				<variant name="sku-ds-nfc">
 					<string name="dualsim">true</string>
 					<string name="nfc">nq</string>
+                                        <string name="barometer">false</string>
 				</variant>
 				<variant name="sku-ss-nfc_ese">
 					<string name="dualsim">false</string>
 					<string name="nfc">ese_nq</string>
+                                        <string name="barometer">false</string>
 				</variant>
 				<variant name="sku-ds-nfc_ese">
 					<string name="dualsim">true</string>
 					<string name="nfc">ese_nq</string>
+                                        <string name="barometer">false</string>
+				</variant>
+                                <variant name="sku-ss-nfc-p">
+					<string name="dualsim">false</string>
+					<string name="nfc">nq</string>
+                                        <string name="barometer">true</string>
+				</variant>
+				<variant name="sku-ds-nfc-p">
+					<string name="dualsim">true</string>
+					<string name="nfc">nq</string>
+                                        <string name="barometer">true</string>
+				</variant>
+				<variant name="sku-ss-nfc_ese-p">
+					<string name="dualsim">false</string>
+					<string name="nfc">ese_nq</string>
+                                        <string name="barometer">true</string>
+				</variant>
+				<variant name="sku-ds-nfc_ese-p">
+					<string name="dualsim">true</string>
+					<string name="nfc">ese_nq</string>
+                                        <string name="barometer">true</string>
 				</variant>
 			</skus>
 		</mappings>

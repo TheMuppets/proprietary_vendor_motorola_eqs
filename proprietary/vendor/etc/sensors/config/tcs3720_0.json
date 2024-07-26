@@ -220,7 +220,7 @@
           "data": "200.0"
         },
         "p_offset_cal_limit":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
+          "data": "1024.0"
         },
         "p_ambcomp_lvl":{ "type": "flt", "ver": "0",
           "data": "7.0"
