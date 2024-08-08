@@ -646,3 +646,6 @@ PRODUCT_PACKAGES += \
     motorola.hardware.sensorext.service \
     android.hardware.nfc@1.2-service.st \
     android.hardware.secure_element@1.2-service-gto
+
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay
