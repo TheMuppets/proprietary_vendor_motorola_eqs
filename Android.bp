@@ -26,14 +26,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.secure_element@1.0-impl-gto",
+	name: "android.hardware.secure_element@1.1-impl-gto",
 	owner: "motorola",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl-gto.so"],
+			srcs: ["proprietary/vendor/lib64/android.hardware.secure_element@1.1-impl-gto.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.secure_element@1.2-impl-gto",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.secure_element@1.2-impl-gto.so"],
 		},
 	},
 	compile_multilib: "64",
