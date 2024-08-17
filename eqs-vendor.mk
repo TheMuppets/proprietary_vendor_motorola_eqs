@@ -133,19 +133,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_cfg_group.bin \
     vendor/motorola/eqs/proprietary/vendor/firmware/tianma_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_test_limits_255.csv \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.sensormodule.mot_eqs_imx663_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.mot_eqs_imx663_ofilm.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.sensormodule.mot_eqs_ov60a_qtech.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.mot_eqs_ov60a_qtech.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.sensormodule.mot_eqs_s5khp1_qtech.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.mot_eqs_s5khp1_qtech.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.sensormodule.mot_eqs_s5kjn1_qtech.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.mot_eqs_s5kjn1_qtech.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.tuned.mot_eqs_imx663.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.mot_eqs_imx663.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.tuned.mot_eqs_ov60a.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.mot_eqs_ov60a.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.tuned.mot_eqs_s5khp1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.mot_eqs_s5khp1.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/com.qti.tuned.mot_eqs_s5kjn1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.mot_eqs_s5kjn1.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/motorola/eqs/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_u.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_eqs_imx663_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_eqs_imx663_ofilm.bin \
     vendor/motorola/eqs/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_eqs_ov60a_qtech.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_eqs_ov60a_qtech.bin \
@@ -165,6 +152,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/frontier_arcsoft_super_night_se_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/frontier_arcsoft_super_night_se_raw.bin
 
 PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0-impl-gto \
+    android.hardware.secure_element@1.1-impl-gto \
+    android.hardware.secure_element@1.2-impl-gto \
     com.mot.eeprom.mot_gt24p128e_imx663_eeprom \
     com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom \
     com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom \
@@ -174,8 +164,13 @@ PRODUCT_PACKAGES += \
     com.qti.sensor.mot_ov60a \
     com.qti.sensor.mot_s5khp1 \
     com.qti.sensor.mot_s5kjn1 \
+    com.arcsoft.node.dc_capture \
+    com.arcsoft.node.smooth_transition \
+    com.arcsoft.node.supernightraw \
     com.bots.node.vendortagwrite \
     com.mot.node.c2d \
+    com.mot.node.hdr \
+    com.mot.node.scene_detect \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -241,6 +236,7 @@ PRODUCT_PACKAGES += \
     com.vidhance.node.ica \
     com.vidhance.node.processing \
     com.vidhance.stats.aec_dmbr \
+    libdepthmapwrapper_secure \
     camx.device@3.2-impl \
     camx.device@3.3-impl \
     camx.device@3.4-ext-impl \
@@ -259,6 +255,7 @@ PRODUCT_PACKAGES += \
     camx.provider@2.7-legacy \
     com.qti.chiusecaseselector \
     com.qti.feature2.anchorsync \
+    com.qti.feature2.arcrawpro \
     com.qti.feature2.demux \
     com.qti.feature2.derivedoffline \
     com.qti.feature2.frameselect \
@@ -298,15 +295,36 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.mcx.usecase.extension \
     camera.qcom \
     com.qti.chi.override \
+    libAncHumanSegFigureFusion \
     libFace3DTA \
     libFace3D_hlos \
+    libPlatformValidatorShared \
     libQ6MSFR_manager_stub \
+    libRbsFlow \
+    libSNPE \
+    libSnpeHtpPrepare \
+    libSnpeHtpV68Stub \
+    libSnpeHtpV69Stub \
     liba2d_helper \
     libaidenoiser \
     libaidenoiserv2 \
+    libancbase_rt_fusion \
     libarcsoft_chi_utils \
+    libarcsoft_hdr_detection \
+    libarcsoft_high_dynamic_range \
+    libarcsoft_mcxmflpolicy \
+    libarcsoft_portrait_distortion_correction \
+    libarcsoft_portrait_super_night_se_raw \
+    libarcsoft_qnnhtp \
+    libarcsoft_super_night_raw \
+    libarcsoft_super_night_se_raw \
+    libarcsoft_triple_sat \
+    libarcsoft_triple_zoomtranslator \
     libbitmlengine \
     libbitmlenginev2 \
+    libc++_shared \
+    libcalculator \
+    libcalculator_htp \
     libcamera_nn_stub \
     libcamerapostproc \
     libcamxcommonutils \
@@ -325,10 +343,14 @@ PRODUCT_PACKAGES += \
     libcamxtintlessalgo \
     libchilog \
     libcom.qti.chinodeutils \
+    libets_teeclient_v3 \
+    libeye_tracking_dsp_sample_stub \
     libface3d_dev \
     libfcell \
+    libflatbuffers-cpp_vendor \
     libhdr10plus \
     libhme \
+    libhta \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -346,6 +368,7 @@ PRODUCT_PACKAGES += \
     libmot_engine_settings \
     libmotcameramodulemonitor \
     libmotoisdataqueue \
+    libmpbase \
     libopencv \
     libopencv3a \
     libopestriping \
@@ -356,68 +379,31 @@ PRODUCT_PACKAGES += \
     libqllengine \
     libqshcamera \
     libremosaic_wrapper \
-    libsfeShiftExtrapolation \
-    libswregistrationalgo \
-    libsynx \
-    libtfestriping \
-    libthreadutils \
-    libubifocus \
-    libvidhance \
-    vendor.qti.hardware.camera.aon@1.0-service-impl \
-    vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    libvideoutils \
-    android.hardware.secure_element@1.0-impl-gto \
-    android.hardware.secure_element@1.1-impl-gto \
-    android.hardware.secure_element@1.2-impl-gto \
-    com.arcsoft.node.dc_capture \
-    com.arcsoft.node.smooth_transition \
-    com.arcsoft.node.supernightraw \
-    com.mot.node.hdr \
-    com.mot.node.scene_detect \
-    libdepthmapwrapper_secure \
-    com.qti.feature2.arcrawpro \
-    libAncHumanSegFigureFusion \
-    libPlatformValidatorShared \
-    libRbsFlow \
-    libSNPE \
-    libSnpeHtpPrepare \
-    libSnpeHtpV68Stub \
-    libSnpeHtpV69Stub \
-    libancbase_rt_fusion \
-    libarcsoft_hdr_detection \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_mcxmflpolicy \
-    libarcsoft_portrait_distortion_correction \
-    libarcsoft_portrait_super_night_se_raw \
-    libarcsoft_qnnhtp \
-    libarcsoft_super_night_raw \
-    libarcsoft_super_night_se_raw \
-    libarcsoft_triple_sat \
-    libarcsoft_triple_zoomtranslator \
-    libc++_shared \
-    libcalculator \
-    libcalculator_htp \
-    libets_teeclient_v3 \
-    libeye_tracking_dsp_sample_stub \
-    libflatbuffers-cpp_vendor \
-    libhta \
-    libmpbase \
     libremosaiclib_s5khp1 \
     libremosaiclib_s5kjn1 \
     librmsclib1 \
     libruy_vendor \
+    libsfeShiftExtrapolation \
     libsnpe_dsp_domains_v2 \
     libsnpe_loader \
     libstnfc-auth \
+    libswregistrationalgo \
+    libsynx \
     libtextclassifier_hash_vendor \
+    libtfestriping \
     libtflite_vendor \
+    libthreadutils \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
+    libubifocus \
+    libvidhance \
     nfc_nci.st21nfc.st \
     panel_als_comp_filter_eqs \
     panel_als_comp_filter_eqs_csotc6 \
     panel_als_comp_filter_eqs_tianma \
     vendor.egistec.hardware.fingerprint@4.0 \
+    vendor.qti.hardware.camera.aon@1.0-service-impl \
+    vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.fingerprint@1.0 \
     bm2n08 \
     bm2n09 \
