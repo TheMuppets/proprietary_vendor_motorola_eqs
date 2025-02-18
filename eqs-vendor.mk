@@ -3121,8 +3121,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/motorola/eqs/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
-    vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.st-moto.rc \
-    vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-gto-moto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-gto-moto.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/motorola.hardware.sensorext.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.sensorext.service.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/motorola/eqs/proprietary/vendor/etc/jiigan/jiigan_model.data:$(TARGET_COPY_OUT_VENDOR)/etc/jiigan/jiigan_model.data \
@@ -3239,9 +3237,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/lib64/frontier_arcsoft_super_night_se_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/frontier_arcsoft_super_night_se_raw.bin
 
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-impl-gto \
-    android.hardware.secure_element@1.1-impl-gto \
-    android.hardware.secure_element@1.2-impl-gto \
     com.mot.eeprom.mot_gt24p128e_imx663_eeprom \
     com.mot.eeprom.mot_gt24p128e_s5khp1_eeprom \
     com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom \
@@ -3473,7 +3468,6 @@ PRODUCT_PACKAGES += \
     libsfeShiftExtrapolation \
     libsnpe_dsp_domains_v2 \
     libsnpe_loader \
-    libstnfc-auth \
     libswregistrationalgo \
     libsynx \
     libtextclassifier_hash_vendor \
@@ -3484,7 +3478,6 @@ PRODUCT_PACKAGES += \
     libtriplecam_video_optical_zoom \
     libubifocus \
     libvidhance \
-    nfc_nci.st21nfc.st \
     panel_als_comp_filter_eqs \
     panel_als_comp_filter_eqs_csotc6 \
     panel_als_comp_filter_eqs_tianma \
@@ -3512,10 +3505,7 @@ PRODUCT_PACKAGES += \
     moto-settings \
     com.android.hotwordenrollment.common.util \
     motorola.hardware.sensorext.service.xml \
-    STFlashTool \
     android.hardware.biometrics.fingerprint@2.1-service-ets \
-    android.hardware.nfc@1.2-service.st \
-    android.hardware.secure_element@1.2-service-gto \
     motorola.hardware.sensorext-service \
     vendor.qti.camera.provider@2.7-service_64 \
     motsettings
