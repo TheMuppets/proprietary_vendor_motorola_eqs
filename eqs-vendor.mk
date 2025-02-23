@@ -3119,9 +3119,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667_c6.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667_c6.json \
     vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_ili_1080p_dsc_667.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_mipi_mot_cmd_csot_ili_1080p_dsc_667.json \
     vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_667.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_667.json \
-    vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_mipi_mot_video_dummy_qhd.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_mipi_mot_video_dummy_qhd.json \
-    vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json \
-    vendor/motorola/eqs/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json \
     vendor/motorola/eqs/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/motorola/eqs/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
     vendor/motorola/eqs/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
