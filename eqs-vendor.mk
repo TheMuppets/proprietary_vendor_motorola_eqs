@@ -3096,7 +3096,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/eqs/proprietary/product/etc/CarrierSettings/s90158.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s90158.pb
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/eqs/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/motorola/eqs/proprietary/product/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.xml \
     vendor/motorola/eqs/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
     vendor/motorola/eqs/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
