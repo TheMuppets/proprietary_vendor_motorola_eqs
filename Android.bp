@@ -9261,7 +9261,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "bm2n08",
+    name: "vendor_lib_rfsa_adsp_bm2n08_bin",
     filename: "bm2n08.bin",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n08.bin",
@@ -9270,7 +9270,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n09",
+    name: "vendor_lib_rfsa_adsp_bm2n09_bin",
     filename: "bm2n09.bin",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n09.bin",
@@ -9279,7 +9279,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_jpege_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_jpege_skel_so",
     filename: "libadsp_jpege_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so",
@@ -9288,7 +9288,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libapn_dsp_skel",
+    name: "vendor_lib_rfsa_adsp_libapn_dsp_skel_so",
     filename: "libapn_dsp_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libapn_dsp_skel.so",
@@ -9297,7 +9297,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_skel_so",
     filename: "libbitml_nsp_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so",
@@ -9306,7 +9306,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_v2_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so",
     filename: "libbitml_nsp_v2_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so",
@@ -9315,7 +9315,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libcamera_nn_skel",
+    name: "vendor_lib_rfsa_adsp_libcamera_nn_skel_so",
     filename: "libcamera_nn_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so",
@@ -9324,7 +9324,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_skel",
+    name: "vendor_lib_rfsa_adsp_libhdr_skel_so",
     filename: "libhdr_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so",
@@ -9333,7 +9333,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmctfengine_skel",
+    name: "vendor_lib_rfsa_adsp_libmctfengine_skel_so",
     filename: "libmctfengine_skel.so",
     owner: "motorola",
     src: "proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so",

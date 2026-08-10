@@ -3485,15 +3485,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.fingerprint@1.0 \
-    bm2n08 \
-    bm2n09 \
-    libadsp_jpege_skel \
-    libapn_dsp_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libcamera_nn_skel \
-    libhdr_skel \
-    libmctfengine_skel \
+    vendor_lib_rfsa_adsp_bm2n08_bin \
+    vendor_lib_rfsa_adsp_bm2n09_bin \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapn_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
     MotoSignatureApp \
     MotCamera3AI \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
