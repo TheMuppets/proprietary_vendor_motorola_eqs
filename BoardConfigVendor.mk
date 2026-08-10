@@ -5,6 +5,7 @@
 AB_OTA_PARTITIONS += \
     abl \
     aop \
+    aop_config \
     bluetooth \
     cpucp \
     devcfg \
@@ -17,8 +18,11 @@ AB_OTA_PARTITIONS += \
     prov \
     qupfw \
     shrm \
+    spss \
     storsec \
     tz \
+    uefi \
     uefisecapp \
     xbl \
-    xbl_config
+    xbl_config \
+    xbl_ramdump
