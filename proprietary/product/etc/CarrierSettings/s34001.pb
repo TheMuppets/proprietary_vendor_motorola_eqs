@@ -1,5 +1,5 @@
 
-s34001ÄÁ¹¢ØC
+s34001Œ¦£§ØC
 Orange World Cara?be	orangewap2	10.0.0.10:8082BorangeJwapg
 Orange MMS Cara?be	orangewapBorangeJorangeZ#http://193.251.160.246/servlets/mmsb	10.0.0.10j8082(
 	Orangeweb	orangewebBorangeJorange"¯Ð

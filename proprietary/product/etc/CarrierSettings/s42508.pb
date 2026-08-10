@@ -1,5 +1,5 @@
 
-s42508ƒ¡π¢ù9
+s42508å¶£ßù9
 GolanTelecom Internetinternet.golantelecom.net.il`
 GolanTelecom MMSmms.golantelecom.net.ilZhttp://mmsc.golantelecom.co.ilb10.224.228.81j80"Ã
 carrier_name_override_bool($
