@@ -11,3 +11,4 @@ service vendor.camera-provider-2-7 /vendor/bin/hw/vendor.qti.camera.provider@2.7
     ioprio rt 4
     capabilities SYS_NICE
     task_profiles CameraServiceCapacity HighPerformance ProcessCapacityHigh
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
